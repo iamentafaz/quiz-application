@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quiz Competition</title>
+        <link rel="stylesheet" href="assests/css/resetcss.css">
+        <link rel="stylesheet" href="assests/css/stylesc.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    </head>
+    <body oncontextmenu="return false">
+        <!--First Inroduction and Registration Page For User-->
+        <div class="firstPage">
+        <div class="wrapper">
+            <div class="frontPage">
+                <div class="introduction">
+                    <div class="logoSection">
+                        <img src="assests/images/logo.jpeg" alt="companyLogo" class="ljpg">
+                    </div>
+                    <div class="contentSection">
+                        <h2>Welcome</h2>
+                        <h4>Register for an erc account</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing<br> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever<br> since the 1500s, when an unknown printer took a<br> galley of type and scrambled it to make a type specimen book.<br> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    </div>
+                </div>
+                <div class="userInfo">
+                    <div class="formHead">
+                            <h2>Registration Form</h2>
+                    </div>
+                    <div class="userDetails" id="userForm">
+                        <div>
+                        <input type="text" id="firstname" placeholder="First Name" class="inputDetails"/>
+                        </div>
+                        <div class="wrong" id="fname"></div>
+                        <div>
+                        <input type="text" id="lastname" placeholder="Last Name" class="inputDetails">
+                        </div>
+                        <div class="wrong" id="lname"></div>
+                        <div>
+                        <input type="text" id="email" placeholder="E-mail Id" class="inputDetails">
+                        </div>
+                        <div class="wrong" id="emailid"></div>
+                        <div>
+                        <input type="text" id="mobileno" placeholder="Mobile No." class="inputDetails">
+                        </div>
+                        <div class="wrong" id="phoneno"></div>
+                        <div>
+                        <input type="button" value="Submit" class="submitBtn" id="userSubmitBtn"/>
+                        </div>
+                    </div>
+                </div>
+                    <div class="clear"></div>
+            </div> 
+                <div class="clear"></div>
+        </div>
+        </div>
+        
+        <!--Dynamic Quiz Page For Competition-->
+        <div class="quizSection">
+            <div class="questionSection">
+                <span id="clock" class="timer"></span>
+                <div class="question" onmousedown="return false;" onselectstart="return false;">
+                </div>
+                <div class="choices">
+                </div>
+                <div class="buttonSection">
+                    <button class="prevButton"><i class="fa fa-arrow-left"></i> Prev</button>
+                    <button class="nextButton">Next <i class="fa fa-arrow-right"></i></button>
+                </div>
+        </div>
+        </div>
+        
+        <!--Final Score Page and Thank You-->
+        <div class="answerPage">
+            <div class="answer">
+            </div>
+            <div class="thankYou">
+            </div>
+        </div>
+        <script src="assests/js/formvalidation.js"></script>
+        <script>     
+        $(document).keydown(function(e){
+            var key = e.charCode || e.keyCode;
+            if (key == 116) { 
+                e.preventDefault();
+                alert("Are you sure you want to leave the page?");
+            }
+        });
+        </script>
+    </body>
+</html>
