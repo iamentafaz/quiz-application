@@ -10,16 +10,14 @@
 .wrapper {
   height: 100vh;
   width: 100%;
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/157557/photo-1428550670225-15f007f6f1ba.jpg);
-  /*background:url('/assests/images/frontpage.jpeg');*/
   display: table;
+  background: linear-gradient(to right, hsl(225deg 5.88% 13.33%), hsl(60deg 4.76% 41.18%));;
 }
 
 .introduction {
   display: table-cell;
   float: left;
   width: 55%;
-  /* height: 100vh; */
 }
 
 .logoSection {
@@ -35,15 +33,11 @@
   display: table-cell;
   float: left;
   width: 45%;
-  /* height: 100vh; */
 }
 
 .userDetails {
-  /* padding: 4% 3% 4% 13%; */
   display: inline-block;
   width: 80%;
-  /* background-color: #0f0b2c; */
-  /* opacity: 1.8; */
 }
 
 .formHead {
@@ -51,18 +45,15 @@
   padding: 0% 0% 0% 5%;
   font-family: monospace;
   font-weight: bold;
-  /* text-align: center; */
   margin: 6%;
   color: white;
 }
 
 .inputDetails {
   margin: 2%;
-  padding: 4%;
+  padding: 3%;
   width: 86%;
-  /* display: inline-block; */
-  border-radius: 15px;
-  /* box-shadow: 1px 1px 2px black, 1px 1px 2px black; */
+  border-radius: 8px;
   border: 1px solid #110e2d;
   border-top: none;
   border-left: none;
@@ -73,7 +64,6 @@
   font-size: 20px;
   font-weight: 500;
   border-bottom-color: #0066cc;
-  /* opacity: 1; */
 }
 
 .clear {
@@ -89,18 +79,18 @@
   padding: 3%;
   width: 40%;
   border-style: hidden;
-  /*border: 1px solid rgba(10, 180, 180, 1);*/
   background-color: #FF1A70;
   border-radius: 5px;
   margin: 10% 25%;
   cursor: pointer;
   color: white;
-  font-size: 17px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .submitBtn:hover {
-  background-color: #071f1f;
-  border: 1px solid rgba(10, 180, 180, 1);
+  background-color: rgb(28, 136, 37);
+  border: 1px solid rgb(28, 136, 37);
 }
 
 .quizSection {
@@ -144,21 +134,12 @@
   text-align: center;
 }
 
-/*.option:hover {
-  cursor: pointer;
-  background: #339966;
-}*/
 .choices {
   margin: 1%;
   padding: 0% 0% 0% 5%;
-  /* position: absolute; */
-  /* width: 90%; */
-  /* top: 20px; */
-  /* left: 100px; */
 }
 
 .qInput {
-  /*visibility: hidden;*/
   float: left;
   cursor: pointer;
 }
@@ -171,11 +152,8 @@
 .buttonSection {
   position: fixed;
   margin: 1%;
-  /* overflow: auto; */
   width: 100%;
   bottom: 54px;
-  /* position: relative; */
-  /* text-align: center; */
 }
 
 .prevButton {
@@ -283,12 +261,6 @@
   .question {
     height: 58%;
     padding: 1%;
-    /* padding: 12% 8%; */
-  }
-
-  .choices {
-    /* height: 7%; */
-    /* padding: 2%; */
   }
 
   .option {
@@ -322,7 +294,6 @@
     width: 27%;
     position: absolute;
     right: 55px;
-    /* width: 26%; */
   }
 
   .answer {

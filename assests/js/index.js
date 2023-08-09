@@ -122,18 +122,6 @@ function questionPage() {
             displayCurrentQuestion();
             let x = userAnswer[currentQuestion]; $('input[value=' + userAnswer[currentQuestion] + ']').prop('checked', true);
             $('input[value=' + userAnswer[currentQuestion] + ']').closest(".option").addClass("active");
-
-            /*let values = [];
-            $('input[name="answer"]').each(function() {
-                values.push($(this).val());
-            });
-            for( let j=0; j<values.length;j++){
-            if(values[j]==x) {
-                console.log("hello");
-                }
-                else {
-                    console.log("hi");
-                }}*/
         }
         questionCount--;
     });
